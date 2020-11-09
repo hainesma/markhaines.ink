@@ -1,0 +1,339 @@
+/* Fonts */
+@import url(fontawesome-all.min.css);
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,200;0,300;0,400;0,500;1,300;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,200;0,300;0,400;0,500;1,300;1,400&family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+/* General */
+
+a:active, a:hover, a:link, a:visited {
+    color: white;
+    text-decoration: none;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #d1ddec;
+    margin: 0
+}
+
+button {
+    background: none;
+    font-size: 9pt;
+    letter-spacing: 0.2em;
+}
+
+.copyright {
+    font-family: 'montserrat';
+    font-size: 10pt;
+}
+
+h1 {
+    margin-bottom: 0;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-size: 32pt;
+    font-weight: 300;
+}
+
+h1:after {
+    content: " ";
+    display: block;
+    border-bottom: 2px solid;
+    padding-bottom: 0.5em;
+}
+
+h2 {
+    font-family: 'Barlow+Semi+Condensed', sans-serif;
+    font-size: 24pt;
+    font-weight: 300;
+}
+
+h3 {
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-size: 18pt;
+    font-weight: 300;
+}
+
+p {
+    font-family: 'montserrat', sans-serif;
+    font-weight: 400;
+}
+
+strong {
+    background-color: #ffffff;
+    color: #242943;
+    padding: 0.25em;
+}
+
+/* Wrapper */
+
+#wrapper {
+
+}
+
+/* Header */
+
+#navbar {
+    align-items: center;
+    background-color: transparent;
+    box-shadow: none;
+    color: #ffffff;
+    display: flex;
+    font-family: 'montserrat';
+    font-size: 9pt;
+    font-weight: 500;
+    height: 3.0em;
+    justify-content: space-between;
+    letter-spacing: 0.2em;
+    position: absolute;
+    text-transform: uppercase;
+    top: 0;
+    width: 100%;
+}
+
+    #navbar nav {
+        float: right;
+        list-style: none;
+        padding-right: 1em;
+    }
+
+    #navbar .logo {
+        padding-left: 1em; 
+    }
+
+/* Menu */
+
+/* Dropdown Button */
+.dropbtn {
+    color: white;
+    padding: 0.25em;
+    font-family: 'montserrat';
+    font-weight: 500;
+    border: none;
+    text-transform: uppercase;
+}
+  
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+  
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    background-color: #f1f1f1;
+    box-shadow: 0px 8px 8px 0px rgba(0,0,0,0.2);
+    display: none;
+    position: absolute;
+    min-width: 160px;
+    z-index: 1;
+  }
+  
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: black;
+    float: left;
+    padding: 1em 0.5em;
+    text-decoration: none;
+    display: block;
+}
+  
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+    background-color: #d2d2d2;
+}
+  
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+    float: left;
+    position: absolute;
+    right: 0;
+}
+  
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+    background-color: #f1f1f1;
+    color: #242943;
+}
+
+/* Banner */
+
+#banner-index {
+    align-items: center;
+    display: flex;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-sizing: inherit;
+    color: #ffffff;
+    cursor: default;
+    height: 20vh;
+    margin-bottom: 3em;
+    max-height: 32em;
+    min-height: 22em;
+    
+    position: relative;
+    top: 3em;
+    vertical-align: baseline;
+}
+
+#banner-project1 {
+    align-items: top;
+    display: flex;
+    background-color: #ffffff;
+    background-image: url("../../images/pic07.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    border-color: #000000;
+    box-sizing: inherit;
+    color: #000000;
+    cursor: default;
+    height: 20vh;
+    margin-bottom: 3em;
+    max-height: 32em;
+    min-height: 22em;
+    max-width: 100%;
+    position: relative;
+    top: 3em;
+    vertical-align: baseline;
+}
+
+.banner-content-index {
+    display: inline;
+    flex-wrap: wrap;
+    padding: 6em 1.5em 6em 3em;
+}
+
+.banner-content-project1 {
+    display: inline;
+    flex-wrap: wrap;
+    padding: 0 1.5em 6em 3em;
+    max-width: 50%;
+}
+
+.image{
+    max-width: 100%;
+}
+
+/* Tiles */
+
+#one {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.tiles article {
+    display: flex;
+    height: 18em;
+}
+
+.tiles article:nth-child(4n-1) {
+    width: 60%;
+    background-color: #c3deb0;
+} 
+
+.tiles article:nth-child(4n-2) {
+    width: 60%;
+    background-color: #b8aeea;
+}
+
+.tiles article:nth-child(4n-3) {
+    width: 40%;
+    background-color: #deb0c4;
+} 
+
+.tiles article:nth-child(4n) {
+    width: 40%;
+    background-color: #decab0;
+}
+
+.major {
+    padding: 6em 9em 3em 3em;
+}
+
+.minor {
+    padding: 0 9em 0 3em; 
+}
+
+.minor li {
+    font-family: 'montserrat';
+    margin: 0 0 0 2em;
+}
+
+.link:after {
+    content: " ";
+    display: block;
+    border-bottom: 2px solid #ffffff;
+    padding-bottom: 0.5em;
+}
+
+/* Demo */
+
+#two {
+    max-width: 100%;
+    padding: 3em 3em 3em 3em;
+}
+
+#demo-container {
+    border: #000000;
+    border-width: 2px;
+    display: inline-flex;
+    flex: wrap;
+}
+
+#demo-gif {
+    width: 40%;
+}
+
+
+
+/* Social Medio */
+
+.icons {
+    display: flex;
+    font-size: 20pt;
+}
+
+.icons a {
+    padding-right: 1em;
+}
+
+/* Style all font awesome icons */
+.fa {  
+    padding: 20px;  
+    font-size: 30px;  
+    width: 50px;  
+    text-align: center;  
+    text-decoration: none;
+  }
+    /* Add a hover effect if you want */
+  .fa:hover {  
+    opacity: 0.7;
+  }
+  /* Set a specific color for each brand *//* Facebook */
+  .fa-facebook {  
+    background: #3B5998;  
+    color: white;
+  }
+  
+  /* Twitter */
+  .fa-twitter {  
+    background: #55ACEE;  
+    color: white;
+  } 
+
+/* Footer */
+
+footer {
+    padding-top: 6em;
+}
+
+footer li {
+    list-style: none;
+}
