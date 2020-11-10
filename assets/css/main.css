@@ -7,7 +7,7 @@
 /* General */
 
 a:active, a:hover, a:link, a:visited {
-    color: white;
+    color: #332c5a;
     text-decoration: none;
 }
 
@@ -16,7 +16,7 @@ html {
 }
 
 body {
-    background-color: #d1ddec;
+    background-color: #f7f7f7;
     margin: 0
 }
 
@@ -63,8 +63,8 @@ p {
 }
 
 strong {
-    background-color: #ffffff;
-    color: #242943;
+    background-color: #332c5a;
+    color: #f7f7f7;
     padding: 0.25em;
 }
 
@@ -80,7 +80,7 @@ strong {
     align-items: center;
     background-color: transparent;
     box-shadow: none;
-    color: #ffffff;
+    color: #332c5a;
     display: flex;
     font-family: 'montserrat';
     font-size: 9pt;
@@ -108,7 +108,7 @@ strong {
 
 /* Dropdown Button */
 .dropbtn {
-    color: white;
+    color: #332c5a;
     padding: 0.25em;
     font-family: 'montserrat';
     font-weight: 500;
@@ -134,7 +134,7 @@ strong {
   
 /* Links inside the dropdown */
 .dropdown-content a {
-    color: black;
+    color: #332c5a;
     float: left;
     padding: 1em 0.5em;
     text-decoration: none;
@@ -169,7 +169,7 @@ strong {
     background-repeat: no-repeat;
     background-size: cover;
     box-sizing: inherit;
-    color: #ffffff;
+    color: #332c5a;
     cursor: default;
     height: 20vh;
     margin-bottom: 3em;
@@ -191,7 +191,7 @@ strong {
     background-size: contain;
     border-color: #000000;
     box-sizing: inherit;
-    color: #000000;
+    color: #332c5a;
     cursor: default;
     height: 20vh;
     margin-bottom: 3em;
@@ -233,24 +233,24 @@ strong {
     height: 18em;
 }
 
-.tiles article:nth-child(4n-1) {
-    width: 60%;
-    background-color: #c3deb0;
-} 
-
-.tiles article:nth-child(4n-2) {
-    width: 60%;
-    background-color: #b8aeea;
+.tiles article:nth-child(4n-3) {
+    width: 33%;
+    background-color: #3d7c47;
 }
 
-.tiles article:nth-child(4n-3) {
-    width: 40%;
-    background-color: #deb0c4;
+.tiles article:nth-child(4n-2) {
+    width: 33%;
+    background-color: #09868b;
+}
+ 
+.tiles article:nth-child(4n-1) {
+    width: 33%;
+    background-color: #76c1d4;
 } 
 
 .tiles article:nth-child(4n) {
-    width: 40%;
-    background-color: #decab0;
+    width: 100%;
+    background-color: #f7f7f7;
 }
 
 .major {
