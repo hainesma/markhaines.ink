@@ -87,6 +87,15 @@ ul {
 
 }
 
+#wrapper img {
+    background-color: transparent;
+    
+    flex-wrap: wrap;
+    position: absolute;
+    transition: 500ms;
+    z-index: -1;
+}
+
 /* Header */
 
 #navbar {
@@ -175,6 +184,10 @@ ul {
 
 /* Banner */
 
+#hero {
+    height: 640px;
+}
+
 #banner-index {
     align-items: center;
     display: flex;
@@ -184,7 +197,6 @@ ul {
     box-sizing: inherit;
     color: #332c5a;
     cursor: default;
-    height: 604px;
     margin-bottom: 3em;
     
     min-height: 30em;
@@ -239,31 +251,28 @@ ul {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
+    
 }
 
 .tiles article {
     display: flex;
+    position: relative;
 }
 
-.tiles article:nth-child(4n-3) {
+#digital-garden {
+    background: linear-gradient(to right, transparent, #dddddd);
     width: 100%;
-    background-color: #a9d5b0;
 }
 
-.tiles article:nth-child(4n-2) {
+#sign-posts {
+    background: linear-gradient(to right, transparent, #cccccc);
     width: 100%;
-    background-color: #99ddf8;
 }
  
-.tiles article:nth-child(4n-1) {
+#heart-disease-predictor {
     width: 100%;
-    background-color: #b2dce7;
+    background: linear-gradient(to right, transparent, #bbbbbb);
 } 
-
-.tiles article:nth-child(4n) {
-    width: 100%;
-    background-color: #f7f7f7;
-}
 
 .major {
     padding: 3em 2em 3em 2em;
@@ -279,7 +288,8 @@ ul {
 }
 
 .tools-list {
-    margin: 0;
+    font-size: 75%;
+    font-style: italic;
 }
 
 .link:after {
